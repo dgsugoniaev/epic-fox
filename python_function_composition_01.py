@@ -14,8 +14,8 @@ def mult(x):
     return z
 
 x = 3
-print(addit(3))
-print(mult(3))
+print(addit(3))          # 8
+print(mult(3))           # 24    
 
 # Explanation: Because x is not defined as a local variable in either function,
-# both functions search for x in the global stack.
+# both mult & addit functions search for x in the global stack, thus x takes the value 3.
